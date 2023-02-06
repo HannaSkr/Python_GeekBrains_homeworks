@@ -45,9 +45,9 @@ def nearest_number(r_numbers, x):
 
 n = get_natural_number()
 print() #для красоты, чтобы разделить строки вывода
-r_numbers = random_list(n) #для проверки, что программа работает правильно
-print(*r_numbers, sep = " ")
+r_numbers = random_list(n) 
+print(*r_numbers, sep = " ") #для проверки, что программа работает правильно
 print() #для красоты, чтобы разделить строки вывода
 print("определите, близость к какому элементу ищем")
 x = get_integer_number()
-print(nearest_number(r_numbers, x))
+print(f'самое близкое значение к {x} в заданноем массиве - это {nearest_number(r_numbers, x)}')

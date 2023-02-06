@@ -42,12 +42,12 @@ def random_list(n): #заполнение списка рандомными це
 
 n = get_natural_number()
 print() #для красоты, чтобы разделить строки вывода
-r_numbers = random_list(n) #для проверки, что программа работает правильно
-print(*r_numbers, sep = " ")
+r_numbers = random_list(n) 
+print(*r_numbers, sep = " ") #для проверки, что программа работает правильно
 print() #для красоты, чтобы разделить строки вывода
 print("определите, какой элемент ищем")
 x = get_integer_number()
 cnt_search = r_numbers.count(x)
 print() #для красоты, чтобы разделить строки вывода
-print(cnt_search)
-print() #для красоты, чтобы разделить строки вывода
+print(f'элемент {x} встречается {cnt_search} раз') 
+print()#для красоты, чтобы разделить строки вывода

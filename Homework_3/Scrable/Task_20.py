@@ -57,9 +57,9 @@ letters_rus = {1: 'АВЕИНОРСТ',
 
 
 word = only_letters().upper()
-
+print()
 if cyrillic(word):
-    print(sum([k for i in word for k, v in letters_rus.items() if i in v]))
+    print(f'набранное количество очков - {sum([k for i in word for k, v in letters_rus.items() if i in v])}')
 else:
-    print(sum([k for i in word for k, v in letters_eng.items() if i in v]))    
+    print(f'набранное количество очков - {sum([k for i in word for k, v in letters_eng.items() if i in v])}')    
 
